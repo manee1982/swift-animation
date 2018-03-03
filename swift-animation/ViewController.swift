@@ -31,7 +31,20 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 1, animations: {
             self.welcomeScreenBackground.alpha = 1
         }) { (true) in
-            self.animateWelcomeText()
+//            self.animateWelcomeText()
+            UIView.animate(withDuration: 1, animations: {
+                self.welcomeText.alpha = 1
+            }) { (true) in
+//                self.animateMarketName()
+                UIView.animate(withDuration: 1, animations: {
+                    self.marketName.alpha = 1
+                }) { (true) in
+//                    self.animateBeginShoingTapped()
+                    UIView.animate(withDuration: 1) {
+                        self.beginShopingTapped.alpha = 1
+                    }
+                }
+            }
         }
     }
     
