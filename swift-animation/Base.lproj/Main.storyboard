@@ -1,24 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="DroidKufi-Bold.ttf">
+            <string>DroidArabicKufi-Bold</string>
+        </array>
+        <array key="DroidKufi-Regular.ttf">
+            <string>DroidArabicKufi</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swift_animation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="u0L-Hc-et5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحبا بكم" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Id4-Pp-8oO">
+                                <rect key="frame" x="128" y="80" width="118" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="gQb-Om-GMR"/>
+                                    <constraint firstAttribute="width" constant="118" id="nud-8G-KPb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DroidArabicKufi-Bold" family="Droid Arabic Kufi" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سوق السيارات !! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abe-JK-6bk">
+                                <rect key="frame" x="42.5" y="183" width="290" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Swb-LF-h2a"/>
+                                    <constraint firstAttribute="width" constant="290" id="rq4-To-f03"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DroidArabicKufi-Bold" family="Droid Arabic Kufi" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opo-fs-lO5" customClass="CustomeButton" customModule="swift_animation" customModuleProvider="target">
+                                <rect key="frame" x="101" y="310" width="172" height="46"/>
+                                <color key="backgroundColor" red="1" green="0.35641852221959958" blue="0.35641852221959958" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="Y9D-aN-xAV"/>
+                                    <constraint firstAttribute="height" constant="46" id="nh2-nm-MmU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DroidArabicKufi" family="Droid Arabic Kufi" pointSize="22"/>
+                                <state key="normal" title="ابدا التسوق الان">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Abe-JK-6bk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4G9-gh-9Oz"/>
+                            <constraint firstAttribute="bottom" secondItem="u0L-Hc-et5" secondAttribute="bottom" id="7M4-E9-gNx"/>
+                            <constraint firstItem="u0L-Hc-et5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FFU-PI-foc"/>
+                            <constraint firstItem="u0L-Hc-et5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LYB-9m-UXi"/>
+                            <constraint firstItem="opo-fs-lO5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NNa-jg-h2x"/>
+                            <constraint firstItem="opo-fs-lO5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Pz6-j6-wfE"/>
+                            <constraint firstItem="Abe-JK-6bk" firstAttribute="top" secondItem="Id4-Pp-8oO" secondAttribute="bottom" constant="40" id="Ufl-DW-nCy"/>
+                            <constraint firstItem="Id4-Pp-8oO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="et7-Rg-2Fd"/>
+                            <constraint firstItem="u0L-Hc-et5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="v5F-Le-tsK"/>
+                            <constraint firstItem="Id4-Pp-8oO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zCZ-p9-QAm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="beginShopingTapped" destination="opo-fs-lO5" id="CBU-25-xEs"/>
+                        <outlet property="marketName" destination="Abe-JK-6bk" id="hUg-cs-OSU"/>
+                        <outlet property="welcomeScreenBackground" destination="u0L-Hc-et5" id="eVj-K4-8jO"/>
+                        <outlet property="welcomeText" destination="Id4-Pp-8oO" id="Q8j-HY-lFz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="1080" height="1920"/>
+    </resources>
 </document>

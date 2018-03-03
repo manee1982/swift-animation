@@ -12,6 +12,9 @@
 		667F8395204AAE56001E0674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667F8393204AAE56001E0674 /* Main.storyboard */; };
 		667F8397204AAE56001E0674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 667F8396204AAE56001E0674 /* Assets.xcassets */; };
 		667F839A204AAE56001E0674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667F8398204AAE56001E0674 /* LaunchScreen.storyboard */; };
+		667F83A4204AB168001E0674 /* DroidKufi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 667F83A2204AB168001E0674 /* DroidKufi-Bold.ttf */; };
+		667F83A5204AB168001E0674 /* DroidKufi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 667F83A3204AB168001E0674 /* DroidKufi-Regular.ttf */; };
+		667F83A7204AB2E4001E0674 /* CustomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667F83A6204AB2E4001E0674 /* CustomeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		667F8396204AAE56001E0674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		667F8399204AAE56001E0674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		667F839B204AAE56001E0674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		667F83A2204AB168001E0674 /* DroidKufi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidKufi-Bold.ttf"; sourceTree = "<group>"; };
+		667F83A3204AB168001E0674 /* DroidKufi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidKufi-Regular.ttf"; sourceTree = "<group>"; };
+		667F83A6204AB2E4001E0674 /* CustomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		667F838E204AAE56001E0674 /* swift-animation */ = {
 			isa = PBXGroup;
 			children = (
+				667F83A1204AB146001E0674 /* Fonts */,
 				667F838F204AAE56001E0674 /* AppDelegate.swift */,
 				667F8391204AAE56001E0674 /* ViewController.swift */,
+				667F83A6204AB2E4001E0674 /* CustomeButton.swift */,
 				667F8393204AAE56001E0674 /* Main.storyboard */,
 				667F8396204AAE56001E0674 /* Assets.xcassets */,
 				667F8398204AAE56001E0674 /* LaunchScreen.storyboard */,
 				667F839B204AAE56001E0674 /* Info.plist */,
 			);
 			path = "swift-animation";
+			sourceTree = "<group>";
+		};
+		667F83A1204AB146001E0674 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				667F83A2204AB168001E0674 /* DroidKufi-Bold.ttf */,
+				667F83A3204AB168001E0674 /* DroidKufi-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +141,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				667F839A204AAE56001E0674 /* LaunchScreen.storyboard in Resources */,
+				667F83A4204AB168001E0674 /* DroidKufi-Bold.ttf in Resources */,
 				667F8397204AAE56001E0674 /* Assets.xcassets in Resources */,
 				667F8395204AAE56001E0674 /* Main.storyboard in Resources */,
+				667F83A5204AB168001E0674 /* DroidKufi-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +157,7 @@
 			files = (
 				667F8392204AAE56001E0674 /* ViewController.swift in Sources */,
 				667F8390204AAE56001E0674 /* AppDelegate.swift in Sources */,
+				667F83A7204AB2E4001E0674 /* CustomeButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
