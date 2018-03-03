@@ -13,8 +13,7 @@ class CustomeButton: UIButton {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        
+        createView()
     }
     
     override func prepareForInterfaceBuilder() {
@@ -22,7 +21,7 @@ class CustomeButton: UIButton {
     }
     
     func createView() {
-        self.layer.cornerRadius = 10
+        layer.cornerRadius = 10
     }
 
 }

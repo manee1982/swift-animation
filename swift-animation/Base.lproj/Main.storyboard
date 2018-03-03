@@ -50,11 +50,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opo-fs-lO5" customClass="CustomeButton" customModule="swift_animation" customModuleProvider="target">
-                                <rect key="frame" x="101" y="310" width="172" height="46"/>
+                                <rect key="frame" x="87" y="303" width="200" height="60"/>
                                 <color key="backgroundColor" red="1" green="0.35641852221959958" blue="0.35641852221959958" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="172" id="Y9D-aN-xAV"/>
-                                    <constraint firstAttribute="height" constant="46" id="nh2-nm-MmU"/>
+                                    <constraint firstAttribute="width" constant="200" id="Y9D-aN-xAV"/>
+                                    <constraint firstAttribute="height" constant="60" id="nh2-nm-MmU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="DroidArabicKufi" family="Droid Arabic Kufi" pointSize="22"/>
                                 <state key="normal" title="ابدا التسوق الان">
